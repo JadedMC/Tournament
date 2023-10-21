@@ -29,7 +29,7 @@ public class GameScoreboard extends CustomScoreboard {
         }
 
         if(plugin.eventManager().kit().hasAbilities()) {
-            helper.setTitle("&a&lTournament &b(Beta)");
+            helper.setTitle("&a&lTournament");
             helper.setSlot(13, "&7&m------------------");
             helper.setSlot(12, "&aTime: &f" + game.getTimer().toString());
             helper.setSlot(11, "");
@@ -42,10 +42,10 @@ public class GameScoreboard extends CustomScoreboard {
             helper.setSlot(4, "  &aRepulsor: &f" + game.getRepulsors(player) + "/" + plugin.eventManager().kit().getRepulsors());
             helper.setSlot(3, "");
             helper.setSlot(2, "&7&m------------------");
-            helper.setSlot(1, "&aplay.elytrapvp.net");
+            helper.setSlot(1, "&aplay.jadedmc.net");
         }
         else {
-            helper.setTitle("&a&lTournament &b(Beta)");
+            helper.setTitle("&a&lTournament");
             helper.setSlot(15, "&7&m------------------");
             helper.setSlot(14, "&aTime: &f" + game.getTimer().toString());
             helper.setSlot(13, "");
@@ -62,7 +62,7 @@ public class GameScoreboard extends CustomScoreboard {
             helper.setSlot(4, "  &f" + game.getScore(player) + " &7- &f" + game.getScore(game.getOpponent(player)));
             helper.setSlot(3, "");
             helper.setSlot(2, "&7&m------------------");
-            helper.setSlot(1, "&aplay.elytrapvp.net");
+            helper.setSlot(1, "&aplay.jadedmc.net");
         }
     }
 }
