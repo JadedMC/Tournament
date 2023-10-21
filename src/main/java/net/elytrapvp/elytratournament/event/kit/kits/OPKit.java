@@ -17,7 +17,6 @@ public class OPKit extends Kit {
         setRodMultiplier(1.5);
         setStrongGapple(true);
         setIconMaterial(Material.DIAMOND_CHESTPLATE);
-        setKnockback("op");
 
         setGameMode(GameMode.SURVIVAL);
 

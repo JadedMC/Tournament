@@ -12,7 +12,6 @@ public class DiamondKit extends Kit {
     public DiamondKit(ElytraTournament plugin) {
         super(plugin, "Diamond");
         setIconMaterial(Material.DIAMOND_SWORD);
-        setKnockback("nospeed");
 
         setHunger(true);
 

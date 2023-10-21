@@ -8,7 +8,6 @@ public class SumoKit extends Kit {
 
     public SumoKit(ElytraTournament plugin) {
         super(plugin, "Sumo");
-        setKnockback("nospeed");
 
         setIconMaterial(Material.SLIME_BALL);
 

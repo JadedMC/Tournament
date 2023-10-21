@@ -7,15 +7,12 @@ import net.elytrapvp.elytratournament.utils.item.ItemBuilder;
 import net.elytrapvp.elytratournament.utils.item.ItemUtils;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.potion.PotionEffect;
-import pt.foxspigot.jar.knockback.KnockbackModule;
-//import pt.foxspigot.jar.knockback.KnockbackModule;
 
 import java.util.*;
 
@@ -50,7 +47,6 @@ public class Kit {
     private boolean strongGapple = false;
     private boolean takeDamage = true;
     private boolean waterKills = false;
-    private String knockback = "default";
     private boolean spawnOnStart = false;
 
     // Abilities
@@ -157,8 +153,6 @@ public class Kit {
         for(PotionEffect effect : potionEffects) {
             player.addPotionEffect(effect);
         }
-
-        ((CraftPlayer) player).getHandle().setKnockback(KnockbackModule.getByName(knockback));
     }
 
     /**
@@ -191,14 +185,6 @@ public class Kit {
      */
     public Map<Integer, ItemStack> getItems() {
         return items;
-    }
-
-    /**
-     * Set the knockback profile of the kit.
-     * @param knockback Knockback profile name.
-     */
-    public void setKnockback(String knockback) {
-        this.knockback = knockback;
     }
 
     /**

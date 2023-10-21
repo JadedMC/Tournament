@@ -11,7 +11,6 @@ public class IronKit extends Kit {
     public IronKit(ElytraTournament plugin) {
         super(plugin, "Iron");
         setIconMaterial(Material.IRON_SWORD);
-        setKnockback("nospeed");
 
         ItemStack helmet = new ItemBuilder(Material.IRON_HELMET)
                 .setUnbreakable(true)

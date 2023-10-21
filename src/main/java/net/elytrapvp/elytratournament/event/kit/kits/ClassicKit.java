@@ -12,7 +12,6 @@ public class ClassicKit extends Kit {
     public ClassicKit(ElytraTournament plugin) {
         super(plugin, "Classic");
         setIconMaterial(Material.FISHING_ROD);
-        setKnockback("rod");
         setRodMultiplier(1.5);
         setNaturalRegen(false);
 
