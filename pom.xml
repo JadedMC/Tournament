@@ -19,7 +19,6 @@
     <url>http://www.elytrapvp.net</url>
 
     <build>
-        <finalName>ElytraTournament</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -45,14 +44,6 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                    <outputDirectory>C:\Users\colby\Documents\Test Servers\servers\NewTournament\plugins</outputDirectory>
-                </configuration>
             </plugin>
         </plugins>
         <resources>
@@ -111,13 +102,6 @@
             <version>1.8.8-R0.1-SNAPSHOT</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>xyz.refined</groupId>
-            <artifactId>CarbonSpigot</artifactId>
-            <version>4.2.5</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/Retention (1).jar</systemPath>
         </dependency>
     </dependencies>
 </project>
