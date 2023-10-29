@@ -24,7 +24,7 @@ public class ProjectileLaunchListener implements Listener {
     @EventHandler
     public void onLaunch(ProjectileLaunchEvent event) {
         if (event.getEntityType().equals(EntityType.FISHING_HOOK)) {
-            event.getEntity().setVelocity(event.getEntity().getVelocity().multiply(1.4D));
+            //event.getEntity().setVelocity(event.getEntity().getVelocity().multiply(1.4D));
         }
 
 
