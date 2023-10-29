@@ -109,7 +109,9 @@ public class Event {
 
             // Add players to it.
             List<ParticipantQuery> queries = new ArrayList<>();
-            for(Player player : Bukkit.getOnlinePlayers()) {
+            List<Player> playing = new ArrayList<>(Bukkit.getOnlinePlayers());
+            Collections.shuffle(playing);
+            for(Player player : playing) {
                 queries.add(ParticipantQuery.builder().name(player.getName()).build());
             }
             List<Participant> participants = challonge.bulkAddParticipants(tournament, queries);
