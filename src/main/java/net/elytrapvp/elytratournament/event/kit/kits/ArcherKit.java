@@ -16,19 +16,19 @@ public class ArcherKit extends Kit {
         setNaturalRegen(false);
 
         ItemStack helmet = new ItemBuilder(Material.LEATHER_HELMET)
-                .addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1)
+                .addEnchantment(Enchantment.PROTECTION_PROJECTILE, 2)
                 .setUnbreakable(true)
                 .build();
         ItemStack chestplate = new ItemBuilder(Material.LEATHER_CHESTPLATE)
-                .addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1)
+                .addEnchantment(Enchantment.PROTECTION_PROJECTILE, 2)
                 .setUnbreakable(true)
                 .build();
         ItemStack leggings = new ItemBuilder(Material.LEATHER_LEGGINGS)
-                .addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1)
+                .addEnchantment(Enchantment.PROTECTION_PROJECTILE, 2)
                 .setUnbreakable(true)
                 .build();
         ItemStack boots = new ItemBuilder(Material.LEATHER_BOOTS)
-                .addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 1)
+                .addEnchantment(Enchantment.PROTECTION_PROJECTILE, 2)
                 .setUnbreakable(true)
                 .build();
 
