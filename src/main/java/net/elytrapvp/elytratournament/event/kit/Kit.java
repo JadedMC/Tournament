@@ -47,7 +47,7 @@ public class Kit {
     private boolean strongGapple = false;
     private boolean takeDamage = true;
     private boolean waterKills = false;
-    private boolean spawnOnStart = false;
+    private boolean spawnOnStart = true;
 
     // Abilities
     private int doubleJumps = 0;
