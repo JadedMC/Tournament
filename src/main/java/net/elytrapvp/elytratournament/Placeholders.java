@@ -2,6 +2,7 @@ package net.elytrapvp.elytratournament;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import net.elytrapvp.elytratournament.players.CustomPlayer;
+import net.elytrapvp.elytratournament.utils.GameUtils;
 import net.elytrapvp.elytratournament.utils.chat.ChatUtils;
 import org.bukkit.entity.Player;
 
@@ -103,6 +104,10 @@ class Placeholders extends PlaceholderExpansion {
             }
 
             return ChatUtils.translate(player.getTitle() + "&r ");
+        }
+
+        if(identifier.equals("health")) {
+            return GameUtils.getFormattedHealth(p);
         }
 
         return null;
