@@ -7,6 +7,7 @@ import at.stefangeyer.challonge.model.Match;
 import at.stefangeyer.challonge.model.Participant;
 import at.stefangeyer.challonge.model.Tournament;
 import at.stefangeyer.challonge.model.enumeration.MatchState;
+import at.stefangeyer.challonge.model.enumeration.TournamentState;
 import at.stefangeyer.challonge.model.enumeration.TournamentType;
 import at.stefangeyer.challonge.model.query.MatchQuery;
 import at.stefangeyer.challonge.model.query.ParticipantQuery;
@@ -328,8 +329,20 @@ public class Event {
 
         // Finalizes the tournament
         boolean finished = false;
+        int attempts = 0;
         while(!finished) {
             try {
+                if(tournament.getState() == TournamentState.COMPLETE) {
+                    finished = true;
+                    break;
+                }
+
+                attempts++;
+
+                if(attempts > 3) {
+                    break;
+                }
+
                 challonge.finalizeTournament(tournament);
                 finished = true;
             }
@@ -337,11 +350,16 @@ public class Event {
                 exception.printStackTrace();
 
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(500);
                 } catch (InterruptedException ex) {
                     ex.printStackTrace();
                 }
             }
+        }
+
+        if(!finished) {
+            ChatUtils.chat(host, "&cTournament could not be finalized!");
+            return;
         }
 
 
