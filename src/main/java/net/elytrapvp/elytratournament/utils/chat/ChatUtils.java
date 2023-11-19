@@ -109,14 +109,6 @@ public class ChatUtils {
 
     public static String getFormattedPing(Player player) {
         int ping = ((CraftPlayer) player).getHandle().ping;
-
-        if(player.getName().equalsIgnoreCase("partykid4") ||
-                player.getName().equalsIgnoreCase("HisokasHairGel") ||
-                player.getName().equalsIgnoreCase("IllumiIsAPinHead") ||
-                player.getName().equalsIgnoreCase("AeroLover")) {
-            ping = 35;
-        }
-
         ChatColor color;
 
         if(ping < 40) {
