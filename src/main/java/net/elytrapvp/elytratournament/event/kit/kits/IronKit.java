@@ -32,9 +32,7 @@ public class IronKit extends Kit {
         ItemStack bow = new ItemBuilder(Material.BOW)
                 .setUnbreakable(true)
                 .build();
-        ItemStack arrows = new ItemBuilder(Material.ARROW, 12).build();
-
-        ItemStack gapple = new ItemBuilder(Material.GOLDEN_APPLE, 1).build();
+        ItemStack arrows = new ItemBuilder(Material.ARROW, 32).build();
 
         addItem(39, helmet);
         addItem(38, chestplate);
@@ -43,7 +41,6 @@ public class IronKit extends Kit {
 
         addItem(0, sword);
         addItem(1, bow);
-        addItem(2, gapple);
         addItem(8, arrows);
     }
 }
