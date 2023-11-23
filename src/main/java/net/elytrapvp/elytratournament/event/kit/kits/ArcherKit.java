@@ -16,7 +16,7 @@ public class ArcherKit extends Kit {
         setNaturalRegen(false);
 
         ItemStack helmet = new ItemBuilder(Material.LEATHER_HELMET)
-                .addEnchantment(Enchantment.PROTECTION_PROJECTILE, 2)
+                .addEnchantment(Enchantment.PROTECTION_PROJECTILE, 1)
                 .setUnbreakable(true)
                 .build();
         ItemStack chestplate = new ItemBuilder(Material.LEATHER_CHESTPLATE)
@@ -28,7 +28,7 @@ public class ArcherKit extends Kit {
                 .setUnbreakable(true)
                 .build();
         ItemStack boots = new ItemBuilder(Material.LEATHER_BOOTS)
-                .addEnchantment(Enchantment.PROTECTION_PROJECTILE, 2)
+                .addEnchantment(Enchantment.PROTECTION_PROJECTILE, 1)
                 .setUnbreakable(true)
                 .build();
 
