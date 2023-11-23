@@ -14,7 +14,6 @@ public class OPKit extends Kit {
 
     public OPKit(ElytraTournament plugin) {
         super(plugin, "OP");
-        setRodMultiplier(1.5);
         setStrongGapple(true);
         setIconMaterial(Material.DIAMOND_CHESTPLATE);
 
